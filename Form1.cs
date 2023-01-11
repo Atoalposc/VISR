@@ -13,6 +13,7 @@ using OpenQA.Selenium.Chrome;
 using Timer = System.Timers.Timer;
 using OpenQA.Selenium.Firefox; // Implement browser mode switch
 using System.Linq;
+using System.Security.Policy;
 
 namespace VISR
 {
@@ -94,7 +95,7 @@ namespace VISR
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAccessoryUpdate(object sender, EventArgs e)
         {
             refreshSecondsExpress = 500; // Force update of accessories
             // Don't need this, button1_click does thi already
@@ -102,50 +103,53 @@ namespace VISR
             button1_Click_1(null, null);
         }
 
+        private void linkOpener(string recURL)
+        {
+            Process.Start(new ProcessStartInfo() { FileName = recURL, UseShellExecute = true });
+        }
+
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&25%2C%2C27/indexsort=-");
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&25%2C%2C27/indexsort=-");
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&16%2C16%2C/indexsort=r");
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&16%2C16%2C/indexsort=r");
 
         
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1,28,28,E/holdings&FF=atampa+bay+regional+campus+library&13,13,/indexsort=r");
-
-        
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1,28,28,E/holdings&FF=atampa+bay+regional+campus+library&13,13,/indexsort=r");
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&17%2C%2C27/indexsort=-");
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&17%2C%2C27/indexsort=-");
         
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/aTampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&19%2C%2C27/indexsort=-");
+            linkOpener("https://novacat.nova.edu/search~S13?/aTampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&19%2C%2C27/indexsort=-");
 
         
         }
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/aTampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&13%2C%2C27/indexsort=-");
+            linkOpener("https://novacat.nova.edu/search~S13?/aTampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&13%2C%2C27/indexsort=-");
 
         
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/XTampa+Laptop&searchscope=13&SORT=DZ/XTampa+Laptop&searchscope=13&SORT=DZ&extended=1&SUBKEY=Tampa+Laptop/1%2C3%2C3%2CE/marc&FF=XTampa+Laptop&searchscope=13&SORT=DZ&1%2C1%2C");
-
+            linkOpener("https://novacat.nova.edu/search~S13?/XTampa+Laptop&searchscope=13&SORT=DZ/XTampa+Laptop&searchscope=13&SORT=DZ&extended=1&SUBKEY=Tampa+Laptop/1%2C3%2C3%2CE/marc&FF=XTampa+Laptop&searchscope=13&SORT=DZ&1%2C1%2C");
         
         }
 
@@ -166,12 +170,12 @@ namespace VISR
 
         private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&22%2C22%2C/indexsort=r");
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&22%2C22%2C/indexsort=r");
         }
 
         private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&3%2C3%2C/indexsort=r");
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&3%2C3%2C/indexsort=r");
         }
 
         private void tsmiSettings_Click(object sender, EventArgs e)
@@ -185,6 +189,13 @@ namespace VISR
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void txbAppStatus_TextChanged(object sender, EventArgs e)
         {
 
         }

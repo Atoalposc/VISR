@@ -182,7 +182,7 @@
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.textBox300 = new System.Windows.Forms.TextBox();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.pcblMascotLegacy = new System.Windows.Forms.PictureBox();
+            this.pcbMascotLegacy = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pcb3101thru3511 = new System.Windows.Forms.PictureBox();
@@ -204,7 +204,7 @@
             this.pnlLabels.SuspendLayout();
             this.pnlButtons.SuspendLayout();
             this.pnlFreeRoomsTally.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcblMascotLegacy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMascotLegacy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb3101thru3511)).BeginInit();
@@ -638,6 +638,7 @@
             // 
             // tsmiSettings
             // 
+            this.tsmiSettings.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tsmiSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSettingsRR,
             this.tsmiSettingsBM,
@@ -825,10 +826,10 @@
             // 
             // txbAppStatus
             // 
-            this.txbAppStatus.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.txbAppStatus, "txbAppStatus");
             this.txbAppStatus.Name = "txbAppStatus";
             this.txbAppStatus.ReadOnly = true;
+            this.txbAppStatus.TextChanged += new System.EventHandler(this.txbAppStatus_TextChanged);
             // 
             // txbCurrentFreeRooms
             // 
@@ -1192,11 +1193,11 @@
             this.linkLabel8.TabStop = true;
             this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
-            // pcblMascotLegacy
+            // pcbMascotLegacy
             // 
-            resources.ApplyResources(this.pcblMascotLegacy, "pcblMascotLegacy");
-            this.pcblMascotLegacy.Name = "pcblMascotLegacy";
-            this.pcblMascotLegacy.TabStop = false;
+            resources.ApplyResources(this.pcbMascotLegacy, "pcbMascotLegacy");
+            this.pcbMascotLegacy.Name = "pcbMascotLegacy";
+            this.pcbMascotLegacy.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -1237,6 +1238,7 @@
             // 
             // pcbMascot
             // 
+            this.pcbMascot.Image = global::VISR.Properties.Resources.ComfyShark;
             resources.ApplyResources(this.pcbMascot, "pcbMascot");
             this.pcbMascot.Name = "pcbMascot";
             this.pcbMascot.TabStop = false;
@@ -1281,16 +1283,16 @@
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btnAccessoryUpdate);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.txbCurrentDate);
-            this.panel6.Controls.Add(this.txbAppStatus);
-            this.panel6.Controls.Add(this.txbCurrentTime);
             this.panel6.Controls.Add(this.lblAppStatus);
-            this.panel6.Controls.Add(this.lblCurrentTime);
+            this.panel6.Controls.Add(this.txbCurrentTime);
             this.panel6.Controls.Add(this.btnRefreshRooms);
+            this.panel6.Controls.Add(this.txbAppStatus);
+            this.panel6.Controls.Add(this.lblCurrentTime);
             this.panel6.Controls.Add(this.btnRestart);
             this.panel6.Controls.Add(this.btnExit);
             resources.ApplyResources(this.panel6, "panel6");
@@ -1314,30 +1316,30 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.linkLabel2);
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.linkLabel10);
             this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.linkLabel2);
+            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.linkLabel4);
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.textBox100);
+            this.panel1.Controls.Add(this.linkLabel10);
+            this.panel1.Controls.Add(this.linkLabel7);
+            this.panel1.Controls.Add(this.linkLabel6);
+            this.panel1.Controls.Add(this.linkLabel3);
+            this.panel1.Controls.Add(this.linkLabel9);
             this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBox300);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.linkLabel8);
+            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox200);
+            this.panel1.Controls.Add(this.linkLabel5);
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.linkLabel5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.linkLabel8);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox300);
-            this.panel1.Controls.Add(this.linkLabel9);
-            this.panel1.Controls.Add(this.linkLabel3);
-            this.panel1.Controls.Add(this.linkLabel6);
-            this.panel1.Controls.Add(this.linkLabel7);
-            this.panel1.Controls.Add(this.textBox100);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.linkLabel4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox8);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -1346,7 +1348,6 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.btn3107);
             this.Controls.Add(this.lbl3105);
@@ -1355,12 +1356,11 @@
             this.Controls.Add(this.pnlMascot);
             this.Controls.Add(this.pnlFreeRoomsTally);
             this.Controls.Add(this.pnlDueTimeTally);
-            this.Controls.Add(this.pnlLabels);
             this.Controls.Add(this.lbl2114);
             this.Controls.Add(this.lbl2113);
             this.Controls.Add(this.lbl2112);
             this.Controls.Add(this.lblVersionProgram);
-            this.Controls.Add(this.pcblMascotLegacy);
+            this.Controls.Add(this.pcbMascotLegacy);
             this.Controls.Add(this.btn2116);
             this.Controls.Add(this.lbl3508);
             this.Controls.Add(this.lbl3509);
@@ -1427,7 +1427,8 @@
             this.Controls.Add(this.pcb2112thru2116);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pcb3101thru3511);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Controls.Add(this.pnlLabels);
+            this.Controls.Add(this.panel1);
             this.HelpButton = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "wndMaster";
@@ -1443,7 +1444,7 @@
             this.pnlButtons.PerformLayout();
             this.pnlFreeRoomsTally.ResumeLayout(false);
             this.pnlFreeRoomsTally.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcblMascotLegacy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMascotLegacy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb3101thru3511)).EndInit();
@@ -1594,7 +1595,7 @@
         private System.Windows.Forms.Label lblOverdueTime;
         private System.Windows.Forms.Label lblPoweredBy;
         private System.Windows.Forms.Label lblNOVACAT;
-        private System.Windows.Forms.PictureBox pcblMascotLegacy;
+        private System.Windows.Forms.PictureBox pcbMascotLegacy;
         private System.Windows.Forms.Button count30;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lblVersionProgram;
