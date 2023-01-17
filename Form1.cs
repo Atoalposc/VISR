@@ -1012,13 +1012,6 @@ namespace VISR
             }
         }
 
-        // old ui thread timer
-        private void OnTimedRefresh(object sender, EventArgs e)
-        {
-            //button1.BackColor = Color.Blue;
-            Console.WriteLine("The refresh event was raised at {0}");
-            button1_Click_1(sender, e);
-        }
 
         //STERILIZE TIME
         // 24 hour fix for:
@@ -1584,71 +1577,10 @@ namespace VISR
                         timerC.Start();
                         Console.WriteLine("YARGON");
 
-                        // TEMP
-                        //btnRefreshRooms.Enabled = true;
-                        //btnRefreshRooms.BackColor = SystemColors.Control;
-
-                        //
-
-                        /*
-
-                        {
-                            timer = new System.Windows.Forms.Timer();
-                            timer.Interval = 30000; // here time in milliseconds
-                            timer.Tick += timer_Tick;
-                            timer.Start();
-                            button1.Enabled = false;
-
-                            // place get random code here
-                        }
-
-                        void timer_Tick(object sender, System.EventArgs e)
-                        {
-                            button1.Enabled = true;
-                            timer.Stop();
-                        }
-                        //
-
-
-                        // Old way of getting a refresh before automatic refresh
-                        /*driver.Navigate()
-                            .GoToUrl(
-                                "https://novacat.nova.edu/search~S13?/.b3944335/.b3944335/1,1,1,B/holdings~3944335&FF=&1,0");
-                        */
                     };
-
                     Invoke(inv);
-
                 }
-
-                
-
-                
-
-                //Task.Delay(5000).Wait();
-                //wait(5000); //wait one second
             }
-        }
-
-
-        public void wait(int milliseconds)
-        {
-            var timer1 = new System.Windows.Forms.Timer();
-            if (milliseconds == 0 || milliseconds < 0) return;
-
-            // Console.WriteLine("start wait timer");
-            timer1.Interval = milliseconds;
-            timer1.Enabled = true;
-            timer1.Start();
-
-            timer1.Tick += (s, e) =>
-            {
-                timer1.Enabled = false;
-                timer1.Stop();
-                // Console.WriteLine("stop wait timer");
-            };
-
-            while (timer1.Enabled) Application.DoEvents();
         }
 
         private void roomButtonUpdate(object sender, EventArgs e)
@@ -1867,113 +1799,12 @@ namespace VISR
                     tally30++;
                 else if (entry.Value.RoomLabel.BackColor == Color.Yellow)
                     tallyOverdue++;
-
-               
             }
 
             count90.Text = tally90.ToString();
             count60.Text = tally60.ToString();
             count30.Text = tally30.ToString();
             countOverdue.Text = tallyOverdue.ToString();
-
-            /* Switching of novacata logo test
-            Random rnd = new Random();
-            catType = rnd.Next(10);
-
-            switch (catType)
-            {
-                case 1:
-                    pCat1.Visible = true;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-                case 2:
-                    pCat1.Visible = false;
-                    pCat2.Visible = true;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-                case 3:
-                    pCat1.Visible = false;
-                    pCat2.Visible = false;
-                    pCat3.Visible = true;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-                case 4:
-                    pCat1.Visible = false;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = true;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-                case 5:
-                    pCat1.Visible = false;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = true;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-                case 6:
-                    pCat1.Visible = false;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = true;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-                case 7:
-                    pCat1.Visible = false;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = true;
-                    pCat8.Visible = false;
-                    break;
-                case 8:
-                    pCat1.Visible = false;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = true;
-                    break;
-                default:
-                    pCat1.Visible = true;
-                    pCat2.Visible = false;
-                    pCat3.Visible = false;
-                    pCat4.Visible = false;
-                    pCat5.Visible = false;
-                    pCat6.Visible = false;
-                    pCat7.Visible = false;
-                    pCat8.Visible = false;
-                    break;
-            
-            }*/
 
             if (evictRoom > 0)
             {
@@ -1998,28 +1829,8 @@ namespace VISR
                 Console.WriteLine(upcomingRoom);
             }
 
-
             txbCurrentFreeRooms.Text = Convert.ToString(freeRooms);
         }
-
-
-        /* // OLD TIMER
-        private void StartTimer()
-        {
-            tmr = new System.Windows.Forms.Timer();
-            tmr.Interval = 1000;
-            tmr.Tick += new EventHandler(tmr_Tick);
-            tmr.Enabled = true;
-        }
-
-        void tmr_Tick(object sender, EventArgs e)
-        {
-            string time = DateTime.Now.ToString("h:mm:ss tt");
-            Debug.WriteLine("The current time is {0}", time);
-
-            textBox2.Text = time;
-        }
-        */
     }
 
 

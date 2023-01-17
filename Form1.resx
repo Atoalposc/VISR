@@ -185,7 +185,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn2116.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 75</value>
+    <value>424, 75</value>
   </data>
   <data name="btn2116.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -215,7 +215,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn2124.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 42</value>
+    <value>550, 42</value>
   </data>
   <data name="btn2124.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -275,7 +275,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn2126.Location" type="System.Drawing.Point, System.Drawing">
-    <value>682, 92</value>
+    <value>683, 91</value>
   </data>
   <data name="btn2126.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -305,7 +305,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn2127.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 134</value>
+    <value>778, 133</value>
   </data>
   <data name="btn2127.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -335,7 +335,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn2128.Location" type="System.Drawing.Point, System.Drawing">
-    <value>839, 166</value>
+    <value>842, 166</value>
   </data>
   <data name="btn2128.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -365,7 +365,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3104.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 696</value>
+    <value>13, 695</value>
   </data>
   <data name="btn3104.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -425,7 +425,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3106.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 562</value>
+    <value>14, 564</value>
   </data>
   <data name="btn3106.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -455,7 +455,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3107.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 499</value>
+    <value>14, 496</value>
   </data>
   <data name="btn3107.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -575,7 +575,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3115.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 324</value>
+    <value>303, 323</value>
   </data>
   <data name="btn3115.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -605,7 +605,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3119.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 404</value>
+    <value>645, 402</value>
   </data>
   <data name="btn3119.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -635,7 +635,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3116.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 332</value>
+    <value>356, 333</value>
   </data>
   <data name="btn3116.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -665,7 +665,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3118.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 489</value>
+    <value>422, 489</value>
   </data>
   <data name="btn3118.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -695,7 +695,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3121.Location" type="System.Drawing.Point, System.Drawing">
-    <value>698, 423</value>
+    <value>696, 422</value>
   </data>
   <data name="btn3121.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -725,7 +725,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3122.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 447</value>
+    <value>750, 444</value>
   </data>
   <data name="btn3122.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -755,7 +755,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3123.Location" type="System.Drawing.Point, System.Drawing">
-    <value>814, 468</value>
+    <value>813, 466</value>
   </data>
   <data name="btn3123.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -785,7 +785,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3124.Location" type="System.Drawing.Point, System.Drawing">
-    <value>862, 489</value>
+    <value>863, 488</value>
   </data>
   <data name="btn3124.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -1025,7 +1025,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn3103.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 576</value>
+    <value>408, 576</value>
   </data>
   <data name="btn3103.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -1091,7 +1091,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl2116.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 100</value>
+    <value>422, 100</value>
   </data>
   <data name="lbl2116.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1157,7 +1157,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl2125.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 90</value>
+    <value>609, 91</value>
   </data>
   <data name="lbl2125.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1190,7 +1190,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl2126.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 115</value>
+    <value>675, 116</value>
   </data>
   <data name="lbl2126.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1223,7 +1223,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl2127.Location" type="System.Drawing.Point, System.Drawing">
-    <value>765, 159</value>
+    <value>766, 160</value>
   </data>
   <data name="lbl2127.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1256,7 +1256,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl2128.Location" type="System.Drawing.Point, System.Drawing">
-    <value>829, 190</value>
+    <value>832, 191</value>
   </data>
   <data name="lbl2128.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1289,7 +1289,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3104.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 721</value>
+    <value>14, 720</value>
   </data>
   <data name="lbl3104.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1322,7 +1322,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3105.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 655</value>
+    <value>14, 653</value>
   </data>
   <data name="lbl3105.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1355,7 +1355,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3106.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 586</value>
+    <value>14, 587</value>
   </data>
   <data name="lbl3106.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1388,7 +1388,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3107.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 523</value>
+    <value>15, 520</value>
   </data>
   <data name="lbl3107.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1454,7 +1454,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3113.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 329</value>
+    <value>177, 329</value>
   </data>
   <data name="lbl3113.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1487,7 +1487,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3114.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 340</value>
+    <value>243, 340</value>
   </data>
   <data name="lbl3114.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1553,7 +1553,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3116.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 357</value>
+    <value>364, 358</value>
   </data>
   <data name="lbl3116.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1586,7 +1586,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3119.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 428</value>
+    <value>631, 427</value>
   </data>
   <data name="lbl3119.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1619,7 +1619,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3118.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 513</value>
+    <value>432, 514</value>
   </data>
   <data name="lbl3118.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1652,7 +1652,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3121.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 449</value>
+    <value>687, 448</value>
   </data>
   <data name="lbl3121.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1685,7 +1685,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3122.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 471</value>
+    <value>741, 469</value>
   </data>
   <data name="lbl3122.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1751,7 +1751,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3124.Location" type="System.Drawing.Point, System.Drawing">
-    <value>856, 514</value>
+    <value>861, 514</value>
   </data>
   <data name="lbl3124.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -2015,7 +2015,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl3103.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 600</value>
+    <value>413, 599</value>
   </data>
   <data name="lbl3103.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -2048,7 +2048,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnRefreshRooms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 11</value>
+    <value>384, 11</value>
   </data>
   <data name="btnRefreshRooms.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -2081,13 +2081,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 44</value>
+    <value>9, 44</value>
   </data>
   <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 25</value>
+    <value>82, 30</value>
   </data>
   <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -2111,19 +2111,19 @@
     <value>True</value>
   </data>
   <data name="lblFreeRooms.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Tai Le, 12pt</value>
   </data>
   <data name="lblFreeRooms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblFreeRooms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
+    <value>2, 6</value>
   </data>
   <data name="lblFreeRooms.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblFreeRooms.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 20</value>
+    <value>140, 21</value>
   </data>
   <data name="lblFreeRooms.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -2222,7 +2222,7 @@
     <value>Custom</value>
   </data>
   <data name="tsmiSettingsRR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>164, 22</value>
   </data>
   <data name="tsmiSettingsRR.Text" xml:space="preserve">
     <value>Refresh Rate</value>
@@ -2243,7 +2243,7 @@
     <value>Firefox</value>
   </data>
   <data name="tsmiSettingsBM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>164, 22</value>
   </data>
   <data name="tsmiSettingsBM.Text" xml:space="preserve">
     <value>Browser Mode</value>
@@ -2267,7 +2267,7 @@
     <value>Off</value>
   </data>
   <data name="tsmiSettingsAR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>164, 22</value>
   </data>
   <data name="tsmiSettingsAR.Text" xml:space="preserve">
     <value>Auto-Restart</value>
@@ -2285,7 +2285,7 @@
     <value>Off</value>
   </data>
   <data name="tsmiSettingsBF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>164, 22</value>
   </data>
   <data name="tsmiSettingsBF.Text" xml:space="preserve">
     <value>Button Flashing</value>
@@ -2294,7 +2294,7 @@
     <value>False</value>
   </data>
   <data name="tsmiSettingsFE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>164, 22</value>
   </data>
   <data name="tsmiSettingsFE.Text" xml:space="preserve">
     <value>Force Exit</value>
@@ -2312,7 +2312,7 @@
     <value>7, 2, 0, 2</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 25</value>
+    <value>75, 25</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -2342,7 +2342,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblAppStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 13</value>
+    <value>97, 11</value>
   </data>
   <data name="lblAppStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -2369,10 +2369,10 @@
     <value>1</value>
   </data>
   <data name="txbCurrentTime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8pt</value>
+    <value>Microsoft Tai Le, 8.25pt</value>
   </data>
   <data name="txbCurrentTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 36</value>
+    <value>215, 35</value>
   </data>
   <data name="txbCurrentTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -2381,7 +2381,7 @@
     <value>32</value>
   </data>
   <data name="txbCurrentTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 20</value>
+    <value>131, 21</value>
   </data>
   <data name="txbCurrentTime.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -2408,13 +2408,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnRestart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 8</value>
+    <value>9, 8</value>
   </data>
   <data name="btnRestart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="btnRestart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 25</value>
+    <value>82, 30</value>
   </data>
   <data name="btnRestart.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -2663,7 +2663,7 @@
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txbAppStatus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8pt</value>
+    <value>Microsoft Tai Le, 8.25pt</value>
   </data>
   <data name="txbAppStatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 10</value>
@@ -2675,7 +2675,7 @@
     <value>32</value>
   </data>
   <data name="txbAppStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 20</value>
+    <value>197, 21</value>
   </data>
   <data name="txbAppStatus.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
@@ -2699,7 +2699,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txbCurrentFreeRooms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 29</value>
+    <value>33, 29</value>
   </data>
   <data name="txbCurrentFreeRooms.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -3633,7 +3633,7 @@ Checkout</value>
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txbTotalFreeRooms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 29</value>
+    <value>82, 29</value>
   </data>
   <data name="txbTotalFreeRooms.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -3672,7 +3672,7 @@ Checkout</value>
     <value>NoControl</value>
   </data>
   <data name="lblFreeRoomsDivider.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 30</value>
+    <value>66, 30</value>
   </data>
   <data name="lblFreeRoomsDivider.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -3771,13 +3771,13 @@ Checkout</value>
     <value>1</value>
   </data>
   <data name="pnlFreeRoomsTally.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 302</value>
+    <value>549, 302</value>
   </data>
   <data name="pnlFreeRoomsTally.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="pnlFreeRoomsTally.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 61</value>
+    <value>143, 61</value>
   </data>
   <data name="pnlFreeRoomsTally.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -28656,7 +28656,7 @@ Cords Out</value>
     <value>9</value>
   </data>
   <data name="txbCurrentDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8pt</value>
+    <value>Microsoft Tai Le, 8.25pt</value>
   </data>
   <data name="txbCurrentDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>193, 54</value>
@@ -28668,7 +28668,7 @@ Cords Out</value>
     <value>32</value>
   </data>
   <data name="txbCurrentDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 20</value>
+    <value>169, 21</value>
   </data>
   <data name="txbCurrentDate.TabIndex" type="System.Int32, mscorlib">
     <value>181</value>
@@ -31581,13 +31581,13 @@ Cords Out</value>
     <value>True</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 1</value>
+    <value>3, 27</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>939, 999</value>
+    <value>939, 973</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>185</value>

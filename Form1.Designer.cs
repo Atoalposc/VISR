@@ -638,7 +638,7 @@
             // 
             // tsmiSettings
             // 
-            this.tsmiSettings.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tsmiSettings.BackColor = System.Drawing.SystemColors.Control;
             this.tsmiSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSettingsRR,
             this.tsmiSettingsBM,
