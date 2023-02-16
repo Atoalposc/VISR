@@ -962,7 +962,7 @@ namespace VISR
                     {
                         entry.Value.RoomButton.BackColor = Color.LightPink;
                     }
-                    else if (entry.Value.RoomButton.BackColor == Color.OrangeRed)
+                    else if (entry.Value.RoomButton.BackColor == Color.LightCoral)
                     {
                         entry.Value.RoomButton.BackColor = Color.LightPink;
                         phase1 = true;
@@ -970,7 +970,7 @@ namespace VISR
                     }
                     else
                     {
-                        entry.Value.RoomButton.BackColor = Color.OrangeRed;
+                        entry.Value.RoomButton.BackColor = Color.LightCoral;
                         phase1 = false;
                         phase2 = true;
                     }
@@ -1007,7 +1007,7 @@ namespace VISR
                 else if (phase2)
                 {
                     button6.BackColor = Color.Red;
-                    button7.BackColor = Color.OrangeRed;
+                    button7.BackColor = Color.LightCoral;
                 }
             }
         }
@@ -1678,7 +1678,7 @@ namespace VISR
                                 entry.Value.RoomLabel.BackColor = Color.SkyBlue;
                                 if (entry.Value.roomEvict ==
                                     false) // Only OrangeRed if its not a soon to be evicted room, no sense in changing colors twice in one pass
-                                    entry.Value.RoomButton.BackColor = Color.OrangeRed;
+                                    entry.Value.RoomButton.BackColor = Color.LightCoral;
                                 else
                                     entry.Value.RoomButton.BackColor = Color.Pink;
 

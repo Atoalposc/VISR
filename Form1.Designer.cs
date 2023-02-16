@@ -786,21 +786,21 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.OrangeRed;
+            this.button5.BackColor = System.Drawing.Color.LightCoral;
             resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
+            this.button6.BackColor = System.Drawing.Color.LightCoral;
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.OrangeRed;
+            this.button7.BackColor = System.Drawing.Color.LightCoral;
             resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = false;
