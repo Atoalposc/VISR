@@ -904,7 +904,7 @@ namespace VISR
             // Update the interface with current time now as a 
             MethodInvoker inv = delegate { txbCurrentTime.Text = timeNow; };
             Invoke(inv);
-
+            // blah
             var phase1 = false;
             var phase2 = false;
             var idleCount = 0;
