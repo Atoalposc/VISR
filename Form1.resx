@@ -3129,7 +3129,7 @@ Checkout</value>
     <value>116</value>
   </data>
   <data name="lblVersionProgram.Text" xml:space="preserve">
-    <value>Version 0.3.0</value>
+    <value>Version 0.3.1</value>
   </data>
   <data name="&gt;&gt;lblVersionProgram.Name" xml:space="preserve">
     <value>lblVersionProgram</value>

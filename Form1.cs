@@ -160,7 +160,11 @@ namespace VISR
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&4%2C4%2C/indexsort=r");
+        
+            linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&4%2C4%2C/indexsort=r");
+
+            //Old Net framework 4.8 version
+            //System.Diagnostics.Process.Start("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&4%2C4%2C/indexsort=r");
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
