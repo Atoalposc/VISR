@@ -1593,7 +1593,7 @@ namespace VISR
             var x30MinsLater = DateTime.Now.AddMinutes(30);
             var x60MinsLater = DateTime.Now.AddMinutes(60);
             var x90MinsLater = DateTime.Now.AddMinutes(90);
-            freeRooms = -2;
+            freeRooms = 0; // Was initially set to -2 to offset the stuido and 3d print room, try 0 after magenta check on unavailable rooms
             evictRoom = 0;
             oldestOverDueEVICT = DateTime.Now;
             TimeSpan? shortestDue = new TimeSpan(52, 0, 0, 0);
@@ -1623,18 +1623,18 @@ namespace VISR
                 {
                     if (entry.Value.roomStatus.Contains("AVAILABLE"))
                     {
-                            if (lstBtnPressed.Contains(entry.Key))
-                            { 
-                                entry.Value.RoomButton.BackColor = Color.DarkViolet; 
-                            }
-                            else
-                            {
-                                entry.Value.RoomLabel.Text = "Ready";
-                                entry.Value.roomAvailable = true;
+                        if (lstBtnPressed.Contains(entry.Key))
+                        {
+                            entry.Value.RoomButton.BackColor = Color.DarkViolet;
+                        }
+                        else
+                        {
+                            entry.Value.RoomLabel.Text = "Ready";
+                            entry.Value.roomAvailable = true;
 
-                                entry.Value.RoomLabel.BackColor = Color.PaleGreen;
-                                entry.Value.RoomButton.BackColor = Color.LawnGreen;
-                            }
+                            entry.Value.RoomLabel.BackColor = Color.PaleGreen;
+                            entry.Value.RoomButton.BackColor = Color.LawnGreen;
+                        }
                     }
                     else
                     {
@@ -1651,141 +1651,150 @@ namespace VISR
                     }
 
 
-                        if (entry.Value.roomStatus.Contains("Recently"))
+                    if (entry.Value.roomStatus.Contains("Recently"))
+                    {
+                        if (lstBtnPressed.Contains(entry.Key))
                         {
-                            if (lstBtnPressed.Contains(entry.Key))
-                            { 
-                                entry.Value.RoomButton.BackColor = Color.DarkViolet;
-                            }
-                            else 
-                            {
-                                entry.Value.roomAvailable = true;
-                                entry.Value.RoomLabel.BackColor = Color.LightGreen;
-                                entry.Value.RoomButton.BackColor = Color.LawnGreen; 
-                            }
+                            entry.Value.RoomButton.BackColor = Color.DarkViolet;
+                        }
+                        else
+                        {
+                            entry.Value.roomAvailable = true;
+                            entry.Value.RoomLabel.BackColor = Color.LightGreen;
+                            entry.Value.RoomButton.BackColor = Color.LawnGreen;
+                        }
                     }
 
 
                     else if (entry.Value.roomStatus.Contains("DUE"))
                     {
-                            // Automatic removal of unavailable rooms, comment this section out
-                            /*if (lstBtnPressed.Contains(entry.Key))
-                            { 
-                                entry.Value.RoomButton.BackColor = Color.DarkViolet;
-                            }*/
-                            //else
+                        // Automatic removal of unavailable rooms, comment this section out
+                        /*if (lstBtnPressed.Contains(entry.Key))
+                        { 
+                            entry.Value.RoomButton.BackColor = Color.DarkViolet;
+                        }*/
+                        //else
 
-                            // Manually make rooms unavailable, but when they are due, remove unavailable marker automatically
+                        // Manually make rooms unavailable, but when they are due, remove unavailable marker automatically
+                        {
+                            entry.Value.roomAvailable = false;
+
+                            entry.Value.RoomLabel.BackColor = Color.SkyBlue;
+                            if (entry.Value.roomEvict ==
+                                false) // Only OrangeRed if its not a soon to be evicted room, no sense in changing colors twice in one pass
+                                entry.Value.RoomButton.BackColor = Color.LightCoral;
+                            else
+                                entry.Value.RoomButton.BackColor = Color.Pink;
+
+
+                            Console.WriteLine("ROOM DUE TIME >>>");
+                            Console.WriteLine(entry.Value.roomDueTime);
+                            Console.WriteLine("TIME NOW >>>");
+                            Console.WriteLine(DateTime.Now);
+
+                            // Nearing due time
+                            // Nearing due time
+                            if (entry.Value.roomDueTime <= x90MinsLater)
+                                entry.Value.RoomLabel.BackColor = Color.AntiqueWhite;
+                            if (entry.Value.roomDueTime <= x60MinsLater) entry.Value.RoomLabel.BackColor = Color.RosyBrown;
+                            if (entry.Value.roomDueTime <= x30MinsLater) entry.Value.RoomLabel.BackColor = Color.Orange;
+
+                            // OVERDUE
+                            if (DateTime.Now > entry.Value.roomDueTime)
                             {
-                                entry.Value.roomAvailable = false;
-
-                                entry.Value.RoomLabel.BackColor = Color.SkyBlue;
-                                if (entry.Value.roomEvict ==
-                                    false) // Only OrangeRed if its not a soon to be evicted room, no sense in changing colors twice in one pass
-                                    entry.Value.RoomButton.BackColor = Color.LightCoral;
-                                else
-                                    entry.Value.RoomButton.BackColor = Color.Pink;
-
-
-                                Console.WriteLine("ROOM DUE TIME >>>");
-                                Console.WriteLine(entry.Value.roomDueTime);
-                                Console.WriteLine("TIME NOW >>>");
-                                Console.WriteLine(DateTime.Now);
-
-                                // Nearing due time
-                                // Nearing due time
-                                if (entry.Value.roomDueTime <= x90MinsLater)
-                                    entry.Value.RoomLabel.BackColor = Color.AntiqueWhite;
-                                if (entry.Value.roomDueTime <= x60MinsLater) entry.Value.RoomLabel.BackColor = Color.RosyBrown;
-                                if (entry.Value.roomDueTime <= x30MinsLater) entry.Value.RoomLabel.BackColor = Color.Orange;
-
-                                // OVERDUE
-                                if (DateTime.Now > entry.Value.roomDueTime)
+                                Console.Write(Convert.ToString(DateTime.Now), " > ",
+                                    Convert.ToString(entry.Value.roomDueTime));
+                                // Change to overdue and mark yellow
+                                entry.Value.RoomLabel.BackColor = Color.Yellow;
+                                if (entry.Value.roomStatus.Contains("OVERDUE"))
                                 {
-                                    Console.Write(Convert.ToString(DateTime.Now), " > ",
-                                        Convert.ToString(entry.Value.roomDueTime));
-                                    // Change to overdue and mark yellow
-                                    entry.Value.RoomLabel.BackColor = Color.Yellow;
-                                    if (entry.Value.roomStatus.Contains("OVERDUE"))
+                                    // Nothing
+                                }
+                                else
+                                {
+                                    //var lblStringTime = entry.Value.RoomLabel.Text.Substring(4);
+                                    //DateTime? lblTime = timeParser(sender, e, lblStringTime);
+                                    //Console.WriteLine("EVICT TIME OPEN");
+                                    //Console.WriteLine(lblStringTime);
+                                    //Console.WriteLine("EVICT TIME CLOSE");
+
+
+                                    // Find oldest overdue room
+                                    if (entry.Value.roomDueTime < oldestOverDueEVICT)
                                     {
-                                        // Nothing
+                                        oldestOverDueEVICT = entry.Value.roomDueTime;
+                                        evictRoom = entry.Value.roomNumber;
+
+                                        entry.Value.roomEvict = true;
+                                        Console.WriteLine("OLDEST");
+                                        Console.WriteLine(evictRoom);
                                     }
                                     else
                                     {
-                                        //var lblStringTime = entry.Value.RoomLabel.Text.Substring(4);
-                                        //DateTime? lblTime = timeParser(sender, e, lblStringTime);
-                                        //Console.WriteLine("EVICT TIME OPEN");
-                                        //Console.WriteLine(lblStringTime);
-                                        //Console.WriteLine("EVICT TIME CLOSE");
-
-
-                                        // Find oldest overdue room
-                                        if (entry.Value.roomDueTime < oldestOverDueEVICT)
-                                        {
-                                            oldestOverDueEVICT = entry.Value.roomDueTime;
-                                            evictRoom = entry.Value.roomNumber;
-
-                                            entry.Value.roomEvict = true;
-                                            Console.WriteLine("OLDEST");
-                                            Console.WriteLine(evictRoom);
-                                        }
-                                        else
-                                        {
-                                            entry.Value.roomEvict = false;
-                                        }
-
-                                        Console.WriteLine(entry.Value.roomDueTime);
-                                        Console.WriteLine("TIME NOW IS ", DateTime.Now);
-                                        Console.WriteLine("ROOM DUE TIME IS ", entry.Value.roomDueTime);
-
-                                        entry.Value.RoomLabel.Text = entry.Value.RoomLabel.Text.Replace("DUE", "OVERDUE");
-                                        entry.Value.RoomLabel.BackColor = Color.Yellow;
-                                        entry.Value.RoomButton.BackColor = Color.Red; // Moved over from tick rate
+                                        entry.Value.roomEvict = false;
                                     }
+
+                                    Console.WriteLine(entry.Value.roomDueTime);
+                                    Console.WriteLine("TIME NOW IS ", DateTime.Now);
+                                    Console.WriteLine("ROOM DUE TIME IS ", entry.Value.roomDueTime);
+
+                                    entry.Value.RoomLabel.Text = entry.Value.RoomLabel.Text.Replace("DUE", "OVERDUE");
+                                    entry.Value.RoomLabel.BackColor = Color.Yellow;
+                                    entry.Value.RoomButton.BackColor = Color.Red; // Moved over from tick rate
                                 }
+                            }
 
-                                // Oldest Due
+                            // Oldest Due
 
-                                else if (DateTime.Now <= entry.Value.roomDueTime)
+                            else if (DateTime.Now <= entry.Value.roomDueTime)
+                            {
+                                Console.WriteLine("OLDEST DUE");
+                                if (entry.Value.roomStatus.Contains("DUE"))
                                 {
-                                    Console.WriteLine("OLDEST DUE");
-                                    if (entry.Value.roomStatus.Contains("DUE"))
+                                    Console.WriteLine(entry.Value.roomStatus);
+                                    Console.WriteLine(entry.Value.roomDueTime);
+                                    Console.WriteLine("WARN TIME CLOSE");
+                                    var lblShortDiff = entry.Value.roomDueTime - DateTime.Now;
+                                    Console.WriteLine("Difference " + lblShortDiff);
+
+                                    if (lblShortDiff < shortestDue)
                                     {
-                                        Console.WriteLine(entry.Value.roomStatus);
-                                        Console.WriteLine(entry.Value.roomDueTime);
-                                        Console.WriteLine("WARN TIME CLOSE");
-                                        var lblShortDiff = entry.Value.roomDueTime - DateTime.Now;
-                                        Console.WriteLine("Difference " + lblShortDiff);
+                                        shortestDue = lblShortDiff;
+                                        upcomingRoom = entry.Value.roomNumber;
+                                        //entry.Value.roomUpcomingDue = true;
+                                    }
 
-                                        if (lblShortDiff < shortestDue)
-                                        {
-                                            shortestDue = lblShortDiff;
-                                            upcomingRoom = entry.Value.roomNumber;
-                                            //entry.Value.roomUpcomingDue = true;
-                                        }
+                                    Console.WriteLine("SHORTEST DUE" + shortestDue);
+                                    // Find oldest overdue room
+                                    //if (lblTime > oldestOverDueWARN)
+                                    if (entry.Value.roomDueTime > oldestOverDueWARN)
+                                    {
+                                        oldestOverDueWARN = entry.Value.roomDueTime;
+                                        lastCheckOut = entry.Value.roomNumber;
 
-                                        Console.WriteLine("SHORTEST DUE" + shortestDue);
-                                        // Find oldest overdue room
-                                        //if (lblTime > oldestOverDueWARN)
-                                        if (entry.Value.roomDueTime > oldestOverDueWARN)
-                                        {
-                                            oldestOverDueWARN = entry.Value.roomDueTime;
-                                            lastCheckOut = entry.Value.roomNumber;
-
-                                            //entry.Value.latestCheckOut = true;
-                                            //entry.Value.roomLatestCheckOut = true;
-                                            Console.WriteLine("OLDEST WARNING");
-                                            Console.WriteLine(lastCheckOut);
-                                        }
+                                        //entry.Value.latestCheckOut = true;
+                                        //entry.Value.roomLatestCheckOut = true;
+                                        Console.WriteLine("OLDEST WARNING");
+                                        Console.WriteLine(lastCheckOut);
                                     }
                                 }
                             }
+                        }
                     }
-                //} //BtnPressed Nest
+                    //} //BtnPressed Nest
 
                 }
 
-                if (entry.Value.roomAvailable) freeRooms++;             
+                // Quick fix to make unavailable rooms not get counted in tally
+                if (entry.Value.roomAvailable && entry.Value.RoomLabel.BackColor != Color.Magenta)
+                {
+                    freeRooms++;
+                }
+                if (entry.Value.RoomButton.Text == "3101" || entry.Value.RoomButton.Text == "3103")
+                {
+                    freeRooms--;
+
+                }
 
                 /*if (entry.Value.roomLatestCheckOut == true)
                 {

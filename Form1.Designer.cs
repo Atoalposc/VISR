@@ -1238,7 +1238,6 @@
             // 
             // pcbMascot
             // 
-            this.pcbMascot.Image = global::VISR.Properties.Resources.ComfyShark;
             resources.ApplyResources(this.pcbMascot, "pcbMascot");
             this.pcbMascot.Name = "pcbMascot";
             this.pcbMascot.TabStop = false;
