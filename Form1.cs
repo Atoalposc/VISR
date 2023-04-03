@@ -1031,8 +1031,7 @@ namespace VISR
 
             DateTime? timeObj = null;
             // Get rid of words in stats string so that they can be formatted
-            if (inputString.Contains("DUE"))
-            {
+            if (inputString.Contains("DUE") && !inputString.Contains("BILLED")) {
                 var stringToParse = inputString.Replace("DUE", "");
                 //stringToParse = stringToParse.Replace("PM", "");
                 //stringToParse = stringToParse.Replace("AM", "");
@@ -1041,6 +1040,15 @@ namespace VISR
                 Console.WriteLine(stringToParse);
 
                 //timeObj = DateTime.Parse(stringToParse); DUE 06-23-22 12:58PM
+                timeObj = DateTime.ParseExact(stringToParse, "MM-dd-yy hh:mmtt", CultureInfo.InvariantCulture);
+            }
+            // Make a better fix for this in the future, encompassing all other states of study room, but in this case just make a specific one for billed
+            else if (inputString.Contains("BILLED")) 
+            {
+                // Remove DUE and BILLED text from the string thats going to be turned into a date (very sloppy but will fix later)
+                var stringToParse = inputString.Replace("BILLED", "");
+                stringToParse = stringToParse.Replace("DUE", "");
+                stringToParse = stringToParse.Trim();
                 timeObj = DateTime.ParseExact(stringToParse, "MM-dd-yy hh:mmtt", CultureInfo.InvariantCulture);
             }
 
