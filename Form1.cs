@@ -24,7 +24,7 @@ namespace VISR
 
         private readonly Dictionary<int, studyRoom> dict_RoomsTUP = new Dictionary<int, studyRoom>(33);
         private IWebDriver driver;
-        private IWebDriver driver2;
+        //private IWebDriver driver2;
 
         private int evictRoom;
         private int freeRooms, refreshSeconds, refreshSecondsExpress = 300, refreshRate = 20, catType = 1;
@@ -119,7 +119,7 @@ namespace VISR
         {
             linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&16%2C16%2C/indexsort=r");
 
-        
+
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -130,27 +130,27 @@ namespace VISR
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkOpener("https://novacat.nova.edu/search~S13?/atampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&17%2C%2C27/indexsort=-");
-        
+
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkOpener("https://novacat.nova.edu/search~S13?/aTampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&19%2C%2C27/indexsort=-");
 
-        
+
         }
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkOpener("https://novacat.nova.edu/search~S13?/aTampa/atampa/1%2C16%2C49%2CE/marc&FF=atampa+bay+regional+campus+library&13%2C%2C27/indexsort=-");
 
-        
+
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkOpener("https://novacat.nova.edu/search~S13?/XTampa+Laptop&searchscope=13&SORT=DZ/XTampa+Laptop&searchscope=13&SORT=DZ&extended=1&SUBKEY=Tampa+Laptop/1%2C3%2C3%2CE/marc&FF=XTampa+Laptop&searchscope=13&SORT=DZ&1%2C1%2C");
-        
+
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -160,7 +160,7 @@ namespace VISR
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-        
+
             linkOpener("https://novacat.nova.edu/search~S13?/atampa+bay/atampa+bay/1%2C28%2C28%2CE/marc&FF=atampa+bay+regional+campus+library&4%2C4%2C/indexsort=r");
 
             //Old Net framework 4.8 version
@@ -285,7 +285,7 @@ namespace VISR
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
             Invoke((MethodInvoker)delegate { btnRefreshRooms.BackColor = Color.LimeGreen; });
             Invoke((MethodInvoker)delegate { btnRefreshRooms.Enabled = false; });
             timerD.Interval = 5000;
@@ -294,7 +294,7 @@ namespace VISR
             Console.WriteLine("FERROW");
 
 
-            
+
             updateVISRStatus("Resfresh Start");
             Invoke((MethodInvoker)delegate { _ = SeleniumNOVACAT(sender, e); });
             refreshSeconds = 0;
@@ -386,7 +386,7 @@ namespace VISR
             if (current.BackColor != Color.DarkViolet)
             {
                 if (!lstBtnPressed.Contains(Convert.ToInt32(current.Text)))
-                { 
+                {
                     lstBtnPressed.Add(Convert.ToInt32(current.Text));
                 }
                 current.BackColor = Color.DarkViolet;
@@ -406,7 +406,7 @@ namespace VISR
 
             // Revert the background color of the previously-colored button, if any
             //if (lastButton != null)
-                //lastButton.BackColor = SystemColors.Control;
+            //lastButton.BackColor = SystemColors.Control;
 
             // Update the previously-colored button
             //lastButton = current;
@@ -466,7 +466,7 @@ namespace VISR
 
             // Set up the delays for the ToolTip.
             toolTipRefresh.AutoPopDelay =
-            toolTip2112.AutoPopDelay = toolTip2113.AutoPopDelay = 
+            toolTip2112.AutoPopDelay = toolTip2113.AutoPopDelay =
             toolTip2114.AutoPopDelay = toolTip2115.AutoPopDelay =
             toolTip2116.AutoPopDelay = toolTip2124.AutoPopDelay =
             toolTip2125.AutoPopDelay = toolTip2126.AutoPopDelay =
@@ -483,7 +483,7 @@ namespace VISR
             toolTip3502.AutoPopDelay = toolTip3508.AutoPopDelay =
             toolTip3509.AutoPopDelay = toolTip3510.AutoPopDelay =
             toolTip3511.AutoPopDelay = 10000;
-            
+
             toolTipRefresh.InitialDelay =
             toolTip2112.InitialDelay = toolTip2113.InitialDelay =
             toolTip2114.InitialDelay = toolTip2115.InitialDelay =
@@ -502,7 +502,7 @@ namespace VISR
             toolTip3502.InitialDelay = toolTip3508.InitialDelay =
             toolTip3509.InitialDelay = toolTip3510.InitialDelay =
             toolTip3511.InitialDelay = 1000;
-            
+
             toolTipRefresh.ReshowDelay =
             toolTip2112.ReshowDelay = toolTip2113.ReshowDelay =
             toolTip2114.ReshowDelay = toolTip2115.ReshowDelay =
@@ -526,7 +526,7 @@ namespace VISR
             toolTipRefresh.ShowAlways = true;
 
             // Set up the ToolTip text for the Buttons
-            toolTipRefresh.SetToolTip(btnRefreshRooms, 
+            toolTipRefresh.SetToolTip(btnRefreshRooms,
             "Refreshes all the rooms as they appear on Novacat.\n" +
                    "Make sure that your check-out window on Sierra has\n" +
                    "been refreshed/cleared in order for Novacat to update.");
@@ -715,8 +715,8 @@ namespace VISR
             chromeOptions.AddArguments("--headless", "--no-sandbox", "--disable-web-security", "--disable-gpu",
                 "--incognito", "--proxy-bypass-list=*", "--proxy-server='direct://'", "--log-level=3",
                 "--hide-scrollbars"); // Comment this out to see the chrome browser itself
-            //chromeOptions.AddArguments();
-            
+                                      //chromeOptions.AddArguments();
+
 
             //var chromeDriverService = ChromeDriverService.CreateDefaultService();
             //chromeDriverService.HideCommandPromptWindow = true;
@@ -732,11 +732,11 @@ namespace VISR
             updateVISRStatus("Get Novacat");
             // Go to NOVACAT
 
-            
+
             /*driver.Navigate() // Before PagerFetch was used, uncomment to go back
                 .GoToUrl("https://novacat.nova.edu/search~S13?/.b3944335/.b3944335/1,1,1,B/holdings~3944335&FF=&1,0");       */
             button1_Click_1(null, null);
-            
+
 
             //Timer for button flashes
             var aTimer = new Timer();
@@ -823,13 +823,13 @@ namespace VISR
 
 
             if (refreshRate > 0)
-                { 
-                    updateVISRStatus("Waiting " + Convert.ToString(refreshRate) + "s");
-                }
+            {
+                updateVISRStatus("Waiting " + Convert.ToString(refreshRate) + "s");
+            }
             else
-                { 
-                    updateVISRStatus("Waiting");
-                }
+            {
+                updateVISRStatus("Waiting");
+            }
 
         }
 
@@ -870,7 +870,7 @@ namespace VISR
             refreshSeconds++;
 
             refreshSecondsExpress++;
-            
+
 
             var timeSignalNow = e.SignalTime;
             var timeNow = timeSignalNow.ToString("hh:mm:ss tt");
@@ -884,7 +884,7 @@ namespace VISR
             if (timeSignalNow >= timeTBRCLOpen && timeSignalNow <= timeTBRCLClose)
             {
                 if (refreshRate > 0)
-                { 
+                {
                     if (refreshSeconds >= refreshRate)
                     {
                         updateVISRStatus("Auto Refresh (" + Convert.ToString(refreshRate) + ")");
@@ -1031,7 +1031,8 @@ namespace VISR
 
             DateTime? timeObj = null;
             // Get rid of words in stats string so that they can be formatted
-            if (inputString.Contains("DUE") && !inputString.Contains("BILLED")) {
+            if (inputString.Contains("DUE") && !inputString.Contains("BILLED"))
+            {
                 var stringToParse = inputString.Replace("DUE", "");
                 //stringToParse = stringToParse.Replace("PM", "");
                 //stringToParse = stringToParse.Replace("AM", "");
@@ -1043,7 +1044,7 @@ namespace VISR
                 timeObj = DateTime.ParseExact(stringToParse, "MM-dd-yy hh:mmtt", CultureInfo.InvariantCulture);
             }
             // Make a better fix for this in the future, encompassing all other states of study room, but in this case just make a specific one for billed
-            else if (inputString.Contains("BILLED")) 
+            else if (inputString.Contains("BILLED"))
             {
                 // Remove DUE and BILLED text from the string thats going to be turned into a date (very sloppy but will fix later)
                 var stringToParse = inputString.Replace("BILLED", "");
@@ -1487,10 +1488,10 @@ namespace VISR
         {
             refreshSeconds = 0; // Reset this so we don't have accidental room refresh while doing an accessory refresh
             driver.Navigate()
-                .GoToUrl(searchCategory);           
+                .GoToUrl(searchCategory);
             //var body = driver.FindElement(By.XPath("//div[. = 'TextToFind']"));
             IWebElement l = driver.FindElement(By.TagName("body"));
-            string mar = l.Text;     
+            string mar = l.Text;
             Console.WriteLine("lantern");
             Console.WriteLine(mar);
             int magic = Regex.Matches(mar, "(DUE)").Count;
@@ -1809,7 +1810,7 @@ namespace VISR
                     entry.Value.RoomLabel.BackColor = Color.LawnGreen;
                 }*/
 
-                
+
 
                 // Count colors
                 if (entry.Value.RoomLabel.BackColor == Color.AntiqueWhite)
@@ -1851,6 +1852,11 @@ namespace VISR
             }
 
             txbCurrentFreeRooms.Text = Convert.ToString(freeRooms);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
