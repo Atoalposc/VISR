@@ -26,6 +26,7 @@ namespace VISR
         private IWebDriver driver;
         //private IWebDriver driver2;
 
+
         private int evictRoom;
         private int freeRooms, refreshSeconds, refreshSecondsExpress = 300, refreshRate = 20, catType = 1;
         private int lastCheckOut;
