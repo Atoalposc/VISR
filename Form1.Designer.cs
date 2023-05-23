@@ -197,7 +197,6 @@
             button2 = new System.Windows.Forms.Button();
             panel6 = new System.Windows.Forms.Panel();
             pnlMascot = new System.Windows.Forms.Panel();
-            label1 = new System.Windows.Forms.Label();
             panel1 = new System.Windows.Forms.Panel();
             menuStrip1.SuspendLayout();
             pnlDueTimeTally.SuspendLayout();
@@ -1283,19 +1282,11 @@
             // pnlMascot
             // 
             pnlMascot.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            pnlMascot.Controls.Add(label1);
             pnlMascot.Controls.Add(lblNOVACAT);
             pnlMascot.Controls.Add(pcbMascot);
             pnlMascot.Controls.Add(lblPoweredBy);
             resources.ApplyResources(pnlMascot, "pnlMascot");
             pnlMascot.Name = "pnlMascot";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            label1.Name = "label1";
-            label1.Click += label1_Click;
             // 
             // panel1
             // 
@@ -1633,7 +1624,6 @@
         private System.Windows.Forms.Panel pnlMascot;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
     }
 }
 
